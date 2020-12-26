@@ -19,7 +19,6 @@ describe('greenkart site' , function(){
         cy.wait(2)
         gp.getAllProducts().should('have.length', 5)
         gp.getAllVisibleProducts().should('have.length', 4)
-
         cy.selectProduct(this.data.singleProduct)
         this.data.productList.forEach(function(element){
             cy.selectProduct(element)
