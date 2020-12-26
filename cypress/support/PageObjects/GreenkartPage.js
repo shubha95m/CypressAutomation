@@ -1,19 +1,15 @@
 class GreenkartPage{
 
-getSearchBox(){
+    getSearchBox(){
         return cy.get('.search-keyword')
     }
 
-getAllProducts(){
+    getAllProducts(){
         return cy.get('.product')
-}
+    }
 
-getAllVisibleProducts(){
+    getAllVisibleProducts(){
         return cy.get('.product:visible')
-}
-
-
-
-
+    }
 }
 export default GreenkartPage
