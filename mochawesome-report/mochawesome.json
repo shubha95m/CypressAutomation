@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-27T17:26:31.964Z",
+    "end": "2020-12-27T17:26:38.249Z",
+    "duration": 6285,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "150073d4-b85b-4c63-8d25-202e914f9b53",
+      "title": "",
+      "fullFile": "cypress/integration/Practice/Greenkart.js",
+      "file": "cypress/integration/Practice/Greenkart.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4cda4b8-3a13-452e-b619-cec89d5e318f",
+          "title": "greenkart site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First test case",
+              "fullTitle": "greenkart site First test case",
+              "timedOut": null,
+              "duration": 4436,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var gp = new _GreenkartPage[\"default\"]();\ncy.visit(Cypress.env('url'));\ngp.getSearchBox().type('ca');\ncy.wait(2);\ngp.getAllProducts().should('have.length', 5);\ngp.getAllVisibleProducts().should('have.length', 4);\ncy.selectProduct(this.data.singleProduct);\nthis.data.productList.forEach(function (element) {\n  cy.selectProduct(element);\n});",
+              "err": {},
+              "uuid": "c8450c4d-b6db-447e-b0c8-26c250dcb472",
+              "parentUUID": "f4cda4b8-3a13-452e-b619-cec89d5e318f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c8450c4d-b6db-447e-b0c8-26c250dcb472"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4436,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
