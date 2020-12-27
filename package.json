@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress" : "node_modules/.bin/cypress",
+    "cypress": "node_modules/.bin/cypress",
     "test": "node_modules\\.bin\\cypress run",
-    "headTest":"npm run test -- --headed",
-    "chromeTest":"npm run test -- --browser chrome",
-    "recordDashBoardTest":"npm run test -- --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12 --reporter mochawesome"
+    "greenkartHeaded": "npm run test -- --spec cypress/integration/Practice/Greenkart.js --headed",
+    "greenkartrecording": "npm run greenkartHeaded -- --record --key 9f180e46-2e59-4bce-82fc-970919888f17",
+    "greenkartmocha": "npm run greenkartHeaded -- --reporter mochawesome",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run greenkartHeaded -- --record --key 9f180e46-2e59-4bce-82fc-970919888f17 --reporter mochawesome"
   },
   "author": "shubham",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.1.0"
+    "cypress": "^6.1.0",
+    "mocha": "^6.2.3",
+    "mochawesome": "^6.2.1"
   }
 }

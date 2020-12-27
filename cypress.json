@@ -1,4 +1,9 @@
 {
   "defaultCommandTimeout": 6000,
-  "projectId": "n23mmz"
+  "projectId": "n23mmz",
+  "reporter": "mochawesome",
+  "env" :
+  {
+    "url" : "https://rahulshettyacademy.com/seleniumPractise/#/"
+  }
 }

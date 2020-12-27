@@ -14,7 +14,7 @@ describe('greenkart site' , function(){
     it('First test case', function(){
         const gp = new GreenkartPage()
 
-        cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+        cy.visit(Cypress.env('url'))
         gp.getSearchBox().type('ca')
         cy.wait(2)
         gp.getAllProducts().should('have.length', 5)
